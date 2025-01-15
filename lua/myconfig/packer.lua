@@ -11,7 +11,10 @@ return require('packer').startup(function(use)
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.8',
 	  -- Or, branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
+	  requires = {
+          { 'nvim-lua/plenary.nvim' },
+          { 'https://github.com/BurntSushi/ripgrep' },
+      }
   }
 
   use ({
@@ -84,6 +87,7 @@ return require('packer').startup(function(use)
   use ( 'vim-airline/vim-airline' )
   use ( 'vim-airline/vim-airline-themes' )
   use ( 'ryanoasis/vim-devicons' )
+  use ( 'tomtom/tcomment_vim' )
 
   use {
       'rmagatti/auto-session',

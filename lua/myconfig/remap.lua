@@ -20,7 +20,8 @@ vim.keymap.set("n", "<leader>w", vim.cmd.bd, { desc = "Close buffer" })
 
 vim.keymap.set("n", "<C-s>", ":w<Enter>", { desc = "Save" })
 vim.keymap.set("v", "<C-s>", "<Escape>:w<Enter>", { desc = "Save" })
-vim.keymap.set("n", "<C-q>", ":q<Enter>", { desc = "Quit" })
+vim.keymap.set("n", "<C-q>", ":q<Enter>", { desc = ":q" })
+vim.keymap.set("n", "<leader>q", ":NvimTreeClose<Enter>:q<Enter>", { desc = "Quit completely" })
 
 vim.keymap.set("n", "Q", "<nop>") -- don't quit w/o saving on accident
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
