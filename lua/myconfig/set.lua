@@ -1,3 +1,6 @@
+vim.o.splitright = true  -- Vertical splits open to the right
+vim.o.splitbelow = true  -- Horizontal splits open below
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 

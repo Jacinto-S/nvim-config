@@ -10,6 +10,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Stay in middle after up" })
 vim.keymap.set("n", "n", "nzzzv", { desc = "Stay in middle when scrolling search" })
 vim.keymap.set("n", "N", "Nzzzv", { desc = "Stay in middle when scrolling search" })
 
+vim.keymap.set("n", "<leader>th", ":split | terminal<Enter>i", { desc = "Horizontal terminal (bottom)"})
+vim.keymap.set("n", "<leader>tv", ":vsplit | terminal<Enter>i", { desc = "Vertical terminal (right)"})
+
 vim.keymap.set("x", "<leader>p", "\"_dP", { desc = "Paste without losing copy" })
 vim.keymap.set("n", "<leader>d", "\"_d", { desc = "Delete without losing copy" })
 vim.keymap.set("v", "<leader>d", "\"_d", { desc = "Delete without losing copy" })
