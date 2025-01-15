@@ -14,6 +14,13 @@ vim.keymap.set("x", "<leader>p", "\"_dP", { desc = "Paste without losing copy" }
 vim.keymap.set("n", "<leader>d", "\"_d", { desc = "Delete without losing copy" })
 vim.keymap.set("v", "<leader>d", "\"_d", { desc = "Delete without losing copy" })
 
+vim.keymap.set("n", "<tab>", vim.cmd.bnext, { desc = "Go to next buffer" })
+vim.keymap.set("n", "<S-Tab>", vim.cmd.bprevious, { desc = "Go to next buffer" })
+vim.keymap.set("n", "<leader>w", vim.cmd.bd, { desc = "Close buffer" })
+
+vim.keymap.set("n", "<C-s>", ":w<Enter>", { desc = "Save" })
+vim.keymap.set("v", "<C-s>", "<Escape>:w<Enter>", { desc = "Save" })
+
 vim.keymap.set("n", "Q", "<nop>") -- don't quit w/o saving on accident
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 -- vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end)

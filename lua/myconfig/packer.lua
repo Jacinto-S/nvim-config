@@ -85,4 +85,13 @@ return require('packer').startup(function(use)
   use ( 'vim-airline/vim-airline-themes' )
   use ( 'ryanoasis/vim-devicons' )
 
+  use {
+  'rmagatti/auto-session',
+  config = function()
+    require("auto-session").setup {
+      suppressed_dirs = { "~/", "~/Downloads", "/"},
+    }
+  end
+}
+
 end)
