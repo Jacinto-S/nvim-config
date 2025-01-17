@@ -1,12 +1,10 @@
 # Neovim Config
 
-### ToDo:
+### To-Do:
 
 - Better support for code completion and tweaks to code suggestions (no spelling...)
-- Better shortcuts for undotree
-- crtl + w shortcuts (resize, easier navigation...) crtl + w >
-
-- Code execution shortcut
-- support for testing
 - Debugger support
-- copy from vimtree
+
+- Git line difference and rollback
+- Code execution shortcut
+- Support for testing

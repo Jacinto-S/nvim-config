@@ -19,7 +19,8 @@ vim.keymap.set("v", "<leader>d", "\"_d", { desc = "Delete without losing copy" }
 
 vim.keymap.set("n", "<tab>", vim.cmd.bnext, { desc = "Go to next buffer" })
 vim.keymap.set("n", "<S-Tab>", vim.cmd.bprevious, { desc = "Go to next buffer" })
-vim.keymap.set("n", "<leader>w", vim.cmd.bd, { desc = "Close buffer" })
+vim.keymap.set("n", "<leader>x", vim.cmd.bd, { desc = "Close buffer" })
+vim.keymap.set("n", "<leader>w", "<C-w>", { desc = "Window manager" })
 
 vim.keymap.set("n", "<C-s>", ":w<Enter>", { desc = "Save" })
 vim.keymap.set("v", "<C-s>", "<Escape>:w<Enter>", { desc = "Save" })
