@@ -25,8 +25,7 @@ airline_symbols.paste = 'ρ'
 airline_symbols.paste = 'Þ'
 airline_symbols.paste = '∥'
 airline_symbols.spell = 'Ꞩ'
-airline_symbols.notexists = 'Ɇ'
-airline_symbols.notexists = '∄'
+airline_symbols.notexists = ' 󰏌' --  ∄Ɇ
 airline_symbols.whitespace = 'Ξ'
 
 -- powerline symbols

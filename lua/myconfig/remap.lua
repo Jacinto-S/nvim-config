@@ -12,6 +12,10 @@ vim.keymap.set("n", "N", "Nzzzv", { desc = "Stay in middle when scrolling search
 
 vim.keymap.set("n", "<leader>th", ":split | terminal<Enter>i", { desc = "Horizontal terminal (bottom)"})
 vim.keymap.set("n", "<leader>tv", ":vsplit | terminal<Enter>i", { desc = "Vertical terminal (right)"})
+vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-t>", ":lua ToggleTerminal()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("t", "<C-t>", "<C-\\><C-n>:lua ToggleTerminal()<CR>", { noremap = true, silent = true })
+vim.keymap.set("t", "<C-q>", "<C-\\><C-n>:bd!<Enter>", { desc = "Close terminal buffer" })
 
 vim.keymap.set("x", "<leader>p", "\"_dP", { desc = "Paste without losing copy" })
 vim.keymap.set("n", "<leader>d", "\"_d", { desc = "Delete without losing copy" })
