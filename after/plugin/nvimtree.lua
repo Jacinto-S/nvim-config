@@ -5,18 +5,13 @@ vim.g.loaded_netrwPlugin = 1
 
 
 require("nvim-tree").setup({
-  -- sort = {
-  --  sorter = "case_sensitive",
-  -- },
-  -- view = {
-  --  width = 30,
-  -- },
-  -- renderer = {
-  --   group_empty = true,
-  -- },
-  -- filters = {
-  --   dotfiles = true,
-  -- },
+  -- Setup for project.nvim
+  sync_root_with_cwd = true,
+  respect_buf_cwd = true,
+  update_focused_file = {
+    enable = true,
+    update_root = true
+  },
 })
 
 vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>", { noremap = true, silent = true, desc = "Toggle NvimTree" })
