@@ -18,12 +18,12 @@ vim.api.nvim_set_keymap("t", "<C-t>", "<C-\\><C-n>:lua ToggleTerminal()<CR>", { 
 vim.keymap.set("t", "<C-q>", "<C-\\><C-n>:bd!<Enter>", { desc = "Close terminal buffer" })
 
 vim.keymap.set("x", "<leader>p", "\"_dP", { desc = "Paste without losing copy" })
-vim.keymap.set("n", "<leader>d", "\"_d", { desc = "Delete without losing copy" })
-vim.keymap.set("v", "<leader>d", "\"_d", { desc = "Delete without losing copy" })
+vim.keymap.set("n", "<leader>x", "\"_d", { desc = "Delete without losing copy" })
+vim.keymap.set("v", "<leader>x", "\"_d", { desc = "Delete without losing copy" })
 
 vim.keymap.set("n", "<tab>", vim.cmd.bnext, { desc = "Go to next buffer" })
 vim.keymap.set("n", "<S-Tab>", vim.cmd.bprevious, { desc = "Go to next buffer" })
-vim.keymap.set("n", "<leader>x", vim.cmd.bd, { desc = "Close buffer" })
+vim.keymap.set("n", "<leader>c", vim.cmd.bd, { desc = "Close buffer" })
 vim.keymap.set("n", "<leader>w", "<C-w>", { desc = "Window manager" })
 
 vim.keymap.set("n", "<C-s>", ":w<Enter>", { desc = "Save" })

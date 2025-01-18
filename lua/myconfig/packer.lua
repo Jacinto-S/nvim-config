@@ -106,4 +106,24 @@ return require('packer').startup(function(use)
       end
   }
 
+  use ( 'mfussenegger/nvim-dap' )
+  use ( 'mfussenegger/nvim-dap-python' )
+  use {
+      "linux-cultist/venv-selector.nvim",
+      requires = {
+          "neovim/nvim-lspconfig",
+          "mfussenegger/nvim-dap",
+          "mfussenegger/nvim-dap-python",
+          {
+              "nvim-telescope/telescope.nvim",
+              branch = "0.1.x",
+              requires = { "nvim-lua/plenary.nvim" }
+          },
+      },
+      branch = "regexp",
+      config = function()
+          require("venv-selector").setup()
+      end
+  }
+
 end)
