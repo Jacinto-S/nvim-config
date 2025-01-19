@@ -70,7 +70,7 @@ return require('packer').startup(function(use)
           -- Keymap for showing buffer-local keymaps
           vim.keymap.set("n", "<leader>?", function()
               require("which-key").show({ global = false })
-          end, { desc = "Buffer Local Keymaps (which-key)" })
+          end, { noremap = true, desc = "Buffer Local Keymaps (which-key)" })
       end
   }
 

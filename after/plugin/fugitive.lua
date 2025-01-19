@@ -1,4 +1,4 @@
-vim.keymap.set('n', '<leader>gs', vim.cmd.Git, { desc = "Git status" })
+vim.keymap.set('n', '<leader>gs', vim.cmd.Git, { noremap = true, desc = "Git status" })
 vim.keymap.set('n', '<leader>ga', '_wy$:Git add <C-r>0<Enter>', { noremap = true, desc = "Git add file" })
 vim.keymap.set('n', '<leader>gd', '_wy$:e <C-r>0<Enter>:Gdiff :0<Enter>', { noremap = true, desc = "Git diff for file" })
 vim.keymap.set('n', '<leader>gr', '_wy$:Git restore --staged <C-r>0<Enter>', { noremap = true, desc = "Git restore file" })
