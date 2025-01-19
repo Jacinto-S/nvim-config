@@ -25,6 +25,8 @@ vim.keymap.set("n", "<tab>", vim.cmd.bnext, { noremap = true, desc = "Go to next
 vim.keymap.set("n", "<S-Tab>", vim.cmd.bprevious, { noremap = true, desc = "Go to next buffer" })
 vim.keymap.set("n", "<leader>c", vim.cmd.bd, { noremap = true, desc = "Close buffer" })
 vim.keymap.set("n", "<leader>w", "<C-w>", { noremap = true, desc = "Window manager" })
+vim.keymap.set("n", "+", "<C-w><", { noremap = true, desc = "Expand window" })
+vim.keymap.set("n", "-", "<C-w>>", { noremap = true, desc = "Decrease window" })
 
 vim.keymap.set("n", "<C-s>", ":w<Enter>", { noremap = true, desc = "Save" })
 vim.keymap.set("v", "<C-s>", "<Escape>:w<Enter>", { noremap = true, desc = "Save" })
