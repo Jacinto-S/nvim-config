@@ -12,7 +12,6 @@
 
 - automatic imports
 - recent project list
-- nvimtree save directory toggle & keep open buffers
 - nvimtree less/no indent on long directory substructs like src.main.java.com.bteam
 - function wide jumping
 - function show required arguments

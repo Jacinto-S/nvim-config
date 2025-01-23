@@ -23,7 +23,7 @@ vim.keymap.set("v", "<leader>x", "\"_d", { noremap = true, desc = "Delete withou
 
 vim.keymap.set("n", "<tab>", vim.cmd.bnext, { noremap = true, desc = "Go to next buffer" })
 vim.keymap.set("n", "<S-Tab>", vim.cmd.bprevious, { noremap = true, desc = "Go to next buffer" })
-vim.keymap.set("n", "<leader>c", vim.cmd.bd, { noremap = true, desc = "Close buffer" })
+vim.keymap.set("n", "<leader>c", ":Bdelete<CR>", { noremap = true, desc = "Close buffer" })
 vim.keymap.set("n", "<leader>w", "<C-w>", { noremap = true, desc = "Window manager" })
 vim.keymap.set("n", "+", "<C-w><", { noremap = true, desc = "Expand window" })
 vim.keymap.set("n", "-", "<C-w>>", { noremap = true, desc = "Decrease window" })
@@ -31,7 +31,7 @@ vim.keymap.set("n", "-", "<C-w>>", { noremap = true, desc = "Decrease window" })
 vim.keymap.set("n", "<C-s>", ":w<Enter>", { noremap = true, desc = "Save" })
 vim.keymap.set("v", "<C-s>", "<Escape>:w<Enter>", { noremap = true, desc = "Save" })
 vim.keymap.set("n", "<C-q>", ":q<Enter>", { noremap = true, desc = ":q" })
-vim.keymap.set("n", "<leader>q", ":qa<Enter>", { noremap = true, desc = "Quit completely" })
+vim.keymap.set("n", "<leader>q", ":SessionSave<Enter>:qa<Enter>", { noremap = true, desc = "Quit completely" })
 
 vim.keymap.set("n", "Q", "<nop>") -- Don't quit w/o saving on accident
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
