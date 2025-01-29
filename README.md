@@ -4,6 +4,7 @@
 
 High Prio:
 - Better support for code completion and tweaks to code suggestions (no spelling...)
+- Working venvs
 
 Mid Prio:
 - Debugger support
