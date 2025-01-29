@@ -7,6 +7,7 @@ wk.add({
     { "<leader>r", group = "Remove", icon = { icon = "⌫", color = "red"} },
     { "<leader>t", group = "Toggle"},
     { "<leader>_", group = "Comment", icon = { icon="//", color = "orange"}},
+    { "<leader>gw", group = "Git Workflow", icon = { icon = "", color = "orange" } },
     { "<leader>v", icon = { icon = "", color="yellow" } },
     { "<leader>h", icon = { icon = "", color = "grey" } },
     { "<leader>c", icon = { icon = "", color = "orange"} },
