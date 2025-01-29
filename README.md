@@ -17,3 +17,4 @@
 - function show required arguments
 - Edit function arguments better
 - Show list of lsp severe errors & jump to them
+- Add jupyter support (jukyt)
