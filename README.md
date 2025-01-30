@@ -3,21 +3,20 @@
 ### To-Do:
 
 High Prio:
-- Better support for code completion and tweaks to code suggestions (no spelling...)
+- Function show required arguments
 
 Mid Prio:
 - Debugger support
 - Git line difference and rollback
 - Code execution shortcut
-- function show required arguments
-
-Low Prio:
 - Add jupyter support (jukyt)
 - Support for testing
-- automatic imports
-- recent project list
-- nvimtree less/no indent on long directory substructs like src.main.java.com.bteam
-- function wide jumping
 - Edit function arguments better
+
+Low Prio:
+- Automatic imports
+- Recent project list
+- Nvimtree less/no indent on long directory substructs like src.main.java.com.bteam
+- Function wide jumping
 - Show list of lsp severe errors & jump to them
 

@@ -85,3 +85,47 @@ cmp.setup({
         ['<CR>'] = cmp.mapping.confirm({ select = true }),
     }),
 })
+
+-- Disable spell checks:
+require('lspconfig').harper_ls.setup {
+    settings = {
+        ["harper-ls"] = {
+            linters = {
+                spell_check = false,
+                spelled_numbers = false,
+                an_a = true,
+                sentence_capitalization = false,
+                unclosed_quotes = true,
+                wrong_quotes = false,
+                long_sentences = false,
+                repeated_words = true,
+                spaces = true,
+                matcher = true,
+                correct_number_suffix = true,
+                number_suffix_capitalization = true,
+                multiple_sequential_pronouns = true,
+                linking_verbs = false,
+                avoid_curses = false,
+                terminating_conjunctions = true
+            }
+        }
+    },
+}
+require('lspconfig').ltex.setup{
+    settings = {
+        ltex = {
+            disabledRules = {
+              ["en"]    = { "MORFOLOGIK_RULE_EN",    "UPPERCASE_SENTENCE_START" },
+              ["en-AU"] = { "MORFOLOGIK_RULE_EN_AU", "UPPERCASE_SENTENCE_START" },
+              ["en-CA"] = { "MORFOLOGIK_RULE_EN_CA", "UPPERCASE_SENTENCE_START" },
+              ["en-GB"] = { "MORFOLOGIK_RULE_EN_GB", "UPPERCASE_SENTENCE_START" },
+              ["en-NZ"] = { "MORFOLOGIK_RULE_EN_NZ", "UPPERCASE_SENTENCE_START" },
+              ["en-US"] = { "MORFOLOGIK_RULE_EN_US", "UPPERCASE_SENTENCE_START" },
+              ["en-ZA"] = { "MORFOLOGIK_RULE_EN_ZA", "UPPERCASE_SENTENCE_START" },
+              ["es"]    = { "MORFOLOGIK_RULE_ES",    "UPPERCASE_SENTENCE_START" },
+              ["it"]    = { "MORFOLOGIK_RULE_IT_IT", "UPPERCASE_SENTENCE_START" },
+              ["de"]    = { "MORFOLOGIK_RULE_DE_DE", "UPPERCASE_SENTENCE_START" },
+            }
+        }
+    }
+}
