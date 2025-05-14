@@ -1,5 +1,7 @@
 # Neovim Config
 
+To install, first install packer.nvim from github, then go to packer.lua and run :so and :PackerSync
+
 ### To-Do:
 
 High Prio:
